@@ -134,7 +134,8 @@ ul{
 }
 li{
     position: relative;
-    margin: 15px;
+    margin: 1px;
+    padding: 13px;
 }
 a{
     text-decoration: none;
@@ -143,7 +144,6 @@ a{
 }
 li:hover{
     border: solid 1px black;
-    min-width: 11%;
     border-radius: 10px;
     text-align: center;
     background-color: rgba(84, 240, 84, 0.329);
