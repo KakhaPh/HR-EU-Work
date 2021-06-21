@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>HR - Work (KP)</title>
+</head>
+<body>
+    <div class="container">
+
+    <!-- Header -->
+    <header><img src="Images/Vector.png" class="Vector"></header>
+    
+    <!-- First Line -->
+    <div class="Firstline">
+        <img src="Images/Eu-logo.png" class="Eu-logo">
+        <h4 class="Profile-mail">Kakha.Putkaradze@eu.edu.ge</h4>
+        <img src="Images/HRlogo.png" class="HRlogo">
+        <img src="Images/Settings-icon.png" class="Settings-icon">
+        <img src="Images/Bell-icon.png" class="Bell-icon">
+        <img src="Images/BDcake-icon.png" class="BDcake-icon">
+    </div>
+
+                        <!-- Navigation-bar-For-Mobile-And-Tablet -->
+        <span class="Navigation-bar" onclick="openNav()">&#9776;</span>
+        <div id="Navigation" class="Navigate">
+            <i href="javascript:void(0)" class="out" onclick="closeNav()">&times;</i>     
+            <li><a href="#">სტრუქტურა<i class="down"></i></a></li>
+            <li><a href="#">პერსონალი<i class="down"></i></a></li>
+            <li><a href="#">ვაკანსიები<i class="down"></i></a></li>
+            <li><a href="#">შვებულება<i class="down"></i></a></li>
+            <li><a href="#">მოტივაცია<i class="down"></i></a></li>
+            <li><a href="#">შეფასება<i class="down"></i></a></li>
+            <li><a href="#">ტრენინგები<i class="down"></i></a></li>
+            <li><a href="#">მრჩეველი<i class="down"></i></a></li>
+            <li><a href="#">ბრძანებები<i class="down"></i></a></li>
+            <li><a href="#">პარამეტრები<i class="down"></i></a></li>
+            
+        </div>
+
+    <!-- Second line -->
+    <div class="sticky"> 
+        <ul>
+            <li><a href="#"><button onclick="myFunction()" class="dropbtn">სტრუქტურა</button><i class="down"></i></a></li>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#">ძირითადი ერთეულები</a>
+                <a href="#">ქვემდებარე ერთეულები</a>
+                <a href="#">თანამდებობები</a>
+                <a href="#">ფაკულტეტები და პროგრამები</a>
+              </div>
+            <li><a href="#">პერსონალი<i class="down"></i></a></li>
+            <li><a href="#">ვაკანსიები<i class="down"></i></a></li>
+            <li><a href="#">შვებულება<i class="down"></i></a></li>
+            <li><a href="#">მოტივაცია<i class="down"></i></a></li>
+            <li><a href="#">შეფასება<i class="down"></i></a></li>
+            <li><a href="#">ტრენინგები<i class="down"></i></a></li>
+            <li><a href="#">მრჩეველი<i class="down"></i></a></li>
+            <li><a href="#">ბრძანებები<i class="down"></i></a></li>
+            <li><a href="#">პარამეტრები<i class="down"></i></a></li>
+            
+        </ul>
+    </div>
+
+    <!-- Main Container -->
+    <main>
+      <div class="container1">
+        <div class="For-text">
+          <div class="inbox1"></div>
+          <p class="text1">მიმდინარე რეგულაციები</p>
+        </div>
+        <div class="For-text">
+          <div class="inbox2"></div>
+          <p class="text2">დასვენების დღეები</p>
+        </div>
+        <div class="For-text">
+          <div class="inbox3"></div>
+          <p class="text3">ადმინისტრაციული პერსონალის აქტივობები</p>
+        </div>
+      </div>
+
+      <div class="container2">
+        <div class="For-text-2">
+          <div class="inbox4"></div>
+          <p class="text4">პერსონალის რაოდენობრივი მაჩვენებელი</p>
+        </div>
+        <div class="For-text-2">
+          <div class="inbox5"></div>
+          <p class="text5">აფილირებული პერსონალის თანაფარდობა აკადემიურ და მოწვეულ პერსონალთან</p>
+        </div>
+      </div>
+
+      <div class="container3">
+          <div class="inbox6"></div>
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer><img src="Images/Vector2.png" class="Vector2"></footer>
+
+  </div>  
+<script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    function openNav() {
+        document.getElementById("Navigation").style.width = "250px";
+    }
+      
+    function closeNav() {
+        document.getElementById("Navigation").style.width = "0";}
+    </script>
+</body>
+</html>
