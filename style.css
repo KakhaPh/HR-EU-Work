@@ -124,30 +124,24 @@ div.sticky {
     position: sticky;
     top: 0;
     z-index: 10;
-    background-color: white;
 }
 ul{
     border-bottom: solid 1px;
+    height: 60px;
+    width: 90%;
+    margin: 5% auto;
     display: flex;
     list-style: none;
-    margin: 5% 10%;
 }
 li{
     position: relative;
-    margin: 1px;
-    padding: 13px;
+    margin: -2px;
+    padding: 22px;
 }
 a{
     text-decoration: none;
     color: black;
     cursor: pointer;
-}
-li:hover{
-    border: solid 1px black;
-    border-radius: 10px;
-    text-align: center;
-    background-color: rgba(84, 240, 84, 0.329);
-
 }
 
 i{
@@ -156,23 +150,26 @@ i{
     display: inline-block;
     padding:3px;
     position: absolute;
-    top: 40%;
+    top: 48%;
     margin-left: 5px;
 }
 .down{
     transform: rotate(45deg);
 }
+
 /* Navbarhover */
-.dropbtn {
+button{
     background-color: #fff;
     color: black;         
     font-size: 16px;
     border: none;
-    cursor: pointer;
+    width: 130%;
 }
-  
-.dropbtn:hover, .dropbtn:focus {
-    background-color: #c7fac7;
+button:hover{
+    background-color:rgba(84, 240, 84, 0.329);
+    border: solid 1px;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 .dropbtn:focus{
@@ -181,10 +178,11 @@ i{
   
 .dropdown-content {
     display: none;
-    background-color: #d4ebd5;
+    background-color: #b6f1b9;
+    border-radius: 10px;
     position:absolute;
     top: 70%;
-    left: 10%;
+    left: 7%;
     min-width: 160px;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -196,6 +194,9 @@ i{
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+}
+.dropdown-content a:hover{
+    background-color:rgba(84, 240, 84, 0.329);
 }
   
 .dropdown a:hover {background-color: #ddd;}
