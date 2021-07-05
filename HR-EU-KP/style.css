@@ -12,9 +12,13 @@ body{
 /* Signin Form */
 .Signin{
     background-color: #bbcde1;
-    margin: 2% 25%;
+    margin: 3% 18%;
 }
 
+.signicons{
+    width: 1200px;
+    height: 700px;
+}
 .forform{
     position: fixed;
     top: 40%;
