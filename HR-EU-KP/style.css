@@ -142,7 +142,7 @@ div.sticky {
 .for-ull{
     margin-top: -40px;
 }
-.Second-line,.Third-line{
+.Second-line{
     border: none;
     border-bottom: solid 1px;
     height: 60px;
@@ -152,8 +152,12 @@ div.sticky {
     list-style: none;
 }
 .Third-line{
-    height: 70px;
-    width: 90%;
+    border-bottom: solid 1px;
+    height: 60px;
+    max-width: 100%;
+    margin: 4%;
+    display: flex;
+    list-style: none;
 }
 .list,.list2{
     border: none;
@@ -189,14 +193,14 @@ button{
     background-color: transparent;
     color: black;         
     font-size: 16px;
-    border: none;
+    border: solid 0px;;
     height: 40px;
     cursor: pointer;
 }
-.list:hover,.list2:hover,.button:hover{
+.list:hover,.list2:hover{
     background-color:#c8e5ff;
     border: solid 1px;
-    max-width: 8%;
+    min-width: 8%;
     border-radius: 10px;
     cursor: pointer;
 }
@@ -299,7 +303,7 @@ button{
 }
 .dropdown-content9 {
     display: none;
-    background-color: #e6f3f #fff;
+    background-color: #e6f3ff;
     border-radius: 10px;
     position:absolute;
     top: 84%;
