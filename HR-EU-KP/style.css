@@ -207,17 +207,20 @@ div.sticky {
     display: flex;
     padding: 20px;
     margin: auto;
-    justify-content: center;
+    justify-content: space-around;
 }
+
 .a-title,.a-title2{
     text-decoration: none;
     color: black;
     cursor: pointer;
     display: flex;
-    align-items: center;
-    
+    align-items: center; 
+
 }
-.a-title2{text-align: center;}
+
+.a-title2{text-align:center}
+
 
 .down{
     border: solid black;
@@ -455,8 +458,11 @@ button{
 .show,.show2,.show3,.show4,.show5,.show6,.show7,.show8,.show9 {display: block;}
 
 /* Main Container */
+.addinfmain{
+    position: absolute;
+    min-width: 100%;
+}
 main{
-    
     max-height: 300px;
 }
 .container1,.container2,.container3{
@@ -572,8 +578,13 @@ main{
 
 }
 
-.container-right,.container-left{
-    margin: 5% auto auto 10%;
+.container-left{
+    width: 70%;
+    margin: 5% auto auto 5%;
+}
+.container-right{
+    margin: 2% auto auto 5%;
+    width: 70%;
 }
 
 .inputs{
@@ -582,6 +593,9 @@ main{
     min-width: 200px;
     outline: none;
     padding: 4px;
+    float: right;
+    margin: -7.5% 20%;
+
 }
 select{
     border: none;
@@ -589,13 +603,24 @@ select{
     min-width: 200px;
     outline: none;
     padding: 4px;
+    float: right;
+    margin: -7% 20%;
+}
+.infsubmit{
+    position: absolute;
+    height: 30px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    margin: 41% 0% 0% 30%;
+    
 }
 
 
 /* Footer */
 .footer{
-    
-    margin-top: 650px;
+    margin-top: 700px;
     min-width: 100%;
 
 }
