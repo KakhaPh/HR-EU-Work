@@ -9,6 +9,42 @@
 body{
     overflow-x: hidden;
 }
+/* Signin Form */
+.Signin{
+    background-color: #bbcde1;
+    margin: 2% 25%;
+}
+
+.forform{
+    position: fixed;
+    top: 40%;
+    left: 38%;
+
+}
+.signin_input{
+    padding: 10px;
+    border-radius: 10px;
+    min-width: 300px;
+    background-color: #ececec;
+    border: solid 1px;
+    outline: none;
+}
+.a-miss{
+    font-size: 15px;
+    float: right;
+    text-decoration: none;
+}
+.submit{
+    margin: 5% auto;
+    padding: 5px;
+    border-radius: 10px;
+    min-width: 100%;
+    background-color: #2e2e2e;
+    color: white;
+    border: none;
+    outline: none;
+}
+
 /* Header */
 .header{
    min-width:100%;
@@ -139,33 +175,35 @@ div.sticky {
     top: 10%;
     background-color: white;
 }
-.for-ull{
+.for-list2-ull{
     margin-top: -40px;
 }
 .Second-line{
     border: none;
     border-bottom: solid 1px;
     height: 60px;
-    max-width: 100%;
-    margin: 6%;
+    margin: auto 5%;
+    margin-top: 8%;
     display: flex;
     list-style: none;
 }
 .Third-line{
+    border: none;
     border-bottom: solid 1px;
     height: 60px;
-    max-width: 100%;
-    margin: 4%;
+    margin: auto 5%;
+    margin-top: 4%;
     display: flex;
     list-style: none;
 }
 .list,.list2{
     border: none;
-    min-width: 8%;
+    min-width: 10%;
     max-height: 20px;
     display: flex;
     padding: 20px;
     margin: auto;
+    justify-content: center;
 }
 .a-title,.a-title2{
     text-decoration: none;
@@ -183,7 +221,7 @@ div.sticky {
     display: inline-block;
     padding:3px;
     position: absolute;
-    top: 45%;
+    top: 40%;
     margin-left: 0.2%;
     transform: rotate(45deg);
 }
@@ -196,12 +234,14 @@ button{
     border: solid 0px;;
     height: 40px;
     cursor: pointer;
+    outline: none;
 }
 .list:hover,.list2:hover{
     background-color:#c8e5ff;
-    border: solid 1px;
-    min-width: 8%;
-    border-radius: 10px;
+    border: solid 1px ;
+    width: fit-content;
+    border-radius: 15px;
+    height: 20px;
     cursor: pointer;
 }
   
@@ -412,11 +452,12 @@ button{
 
 /* Main Container */
 main{
+    
     max-height: 300px;
 }
 .container1,.container2,.container3{
     border: none;
-    margin: auto;
+    margin: 5% auto;
     max-width: 80%;
     min-height: 240px;
     display: flex;
@@ -492,12 +533,12 @@ main{
     min-width: 120px;
     height: 30px;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 7%;
 }
 .excel{
     position: absolute;
-    top: 48%;
+    top: 39%;
     left: 17%;
 }
 
@@ -507,10 +548,10 @@ main{
     padding-left: 20%;
 }
 
-/* Main Personal - Information */
+/* Main Personal - Add information */
 .bigtitle{
     text-align: center;
-    margin-top: -40px;
+    margin-top: 2%;
 }
 .Container{
     border: solid 1px;
@@ -518,17 +559,39 @@ main{
     max-width: 70%;
     min-height: 600px;
     margin: auto;
+    display: flex;
     z-index: 10;
     box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
 }
+.Persinf{
+    padding: 10px;
 
+}
 
+.container-right,.container-left{
+    margin: 5% auto auto 10%;
+}
+
+.inputs{
+    border: none;
+    border-bottom: solid 1px;
+    min-width: 200px;
+    outline: none;
+    padding: 4px;
+}
+select{
+    border: none;
+    border-bottom: solid 1px;
+    min-width: 200px;
+    outline: none;
+    padding: 4px;
+}
 
 
 /* Footer */
 .footer{
-    bottom: 0;
-    margin-top: 450px;
+    
+    margin-top: 650px;
     min-width: 100%;
 
 }
