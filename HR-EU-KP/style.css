@@ -18,9 +18,10 @@ body{
 
 .Eu-logo{
     position: absolute;
-    top: 10%;
+    top: 6%;
     left: 3%;
-    max-width: 18%;
+    min-width: 25%;
+    height: 15%;
 }
 .BDcake-icon{
     float: right;
@@ -135,21 +136,20 @@ body{
 div.sticky {
     position: -webkit-sticky;
     position: sticky;
-    top: 0;
+    top: 10%;
     background-color: white;
-    z-index: 10;
 }
 .for-ull{
     margin-top: -40px;
 }
 .Second-line,.Third-line{
+    border: none;
     border-bottom: solid 1px;
     height: 60px;
-    width: 87%;
-    margin: 5% auto;
+    max-width: 100%;
+    margin: 6%;
     display: flex;
     list-style: none;
-    align-items: center;
 }
 .Third-line{
     height: 70px;
@@ -157,13 +157,11 @@ div.sticky {
 }
 .list,.list2{
     border: none;
-    min-width: 120px;
+    min-width: 8%;
     max-height: 20px;
-    padding: 20px;
-    margin: 1.2%;
     display: flex;
-    align-items: center;
-    
+    padding: 20px;
+    margin: auto;
 }
 .a-title,.a-title2{
     text-decoration: none;
@@ -174,14 +172,15 @@ div.sticky {
     
 }
 .a-title2{text-align: center;}
+
 .down{
     border: solid black;
     border-width: 0 1px 1px 0;
     display: inline-block;
     padding:3px;
     position: absolute;
-    top: 35%;
-    margin-left: 0%;
+    top: 45%;
+    margin-left: 0.2%;
     transform: rotate(45deg);
 }
 
@@ -192,20 +191,19 @@ button{
     font-size: 16px;
     border: none;
     height: 40px;
-    margin-top:-9px;
     cursor: pointer;
 }
 .list:hover,.list2:hover,.button:hover{
-    background-color:rgba(84, 240, 84, 0.329);
+    background-color:#c8e5ff;
     border: solid 1px;
-    height: 100%;
+    max-width: 8%;
     border-radius: 10px;
     cursor: pointer;
 }
   
 .dropdown-content {
     display: none;
-    background-color: #b6f1b9;
+    background-color: #e6f3ff;
     border-radius: 10px;
     position:absolute;
     top: 84%;
@@ -217,7 +215,7 @@ button{
 }
 .dropdown-content2 {
     display: none;
-    background-color: #b6f1b9;
+    background-color: #e6f3ff;
     border-radius: 10px;
     position:absolute;
     top: 84%;
@@ -229,7 +227,7 @@ button{
 }
 .dropdown-content3 {
     display: none;
-    background-color: #b6f1b9;
+    background-color: #e6f3ff;
     border-radius: 10px;
     position:absolute;
     top: 84%;
@@ -241,7 +239,7 @@ button{
 }
 .dropdown-content4 {
     display: none;
-    background-color: #b6f1b9;
+    background-color: #e6f3ff;
     border-radius: 10px;
     position:absolute;
     top: 84%;
@@ -253,7 +251,7 @@ button{
 }
 .dropdown-content5 {
     display: none;
-    background-color: #b6f1b9;
+    background-color: #e6f3ff;
     border-radius: 10px;
     position:absolute;
     top: 84%;
@@ -265,7 +263,7 @@ button{
 }
 .dropdown-content6 {
     display: none;
-    background-color: #b6f1b9;
+    background-color: #e6f3ff;
     border-radius: 10px;
     position:absolute;
     top: 84%;
@@ -277,7 +275,7 @@ button{
 }
 .dropdown-content7 {
     display: none;
-    background-color: #b6f1b9;
+    background-color: #e6f3ff;
     border-radius: 10px;
     position:absolute;
     top: 84%;
@@ -289,7 +287,7 @@ button{
 }
 .dropdown-content8 {
     display: none;
-    background-color: #b6f1b9;
+    background-color: #e6f3ff;
     border-radius: 10px;
     position:absolute;
     top: 84%;
@@ -301,7 +299,7 @@ button{
 }
 .dropdown-content9 {
     display: none;
-    background-color: #b6f1b9;
+    background-color: #e6f3f #fff;
     border-radius: 10px;
     position:absolute;
     top: 84%;
@@ -368,31 +366,31 @@ button{
 }
 
 .dropdown-content .a-title:hover{
-    background-color:rgba(84, 240, 84, 0.329);
+    background-color: #cae4fa;
 }
 .dropdown-content2 .a-title:hover{
-    background-color:rgba(84, 240, 84, 0.329);
+    background-color: #cae4fa;
 }
 .dropdown-content3 .a-title:hover{
-    background-color:rgba(84, 240, 84, 0.329);
+    background-color: #cae4fa;
 }
 .dropdown-content4 .a-title:hover{
-    background-color:rgba(84, 240, 84, 0.329);
+    background-color: #cae4fa;
 }
 .dropdown-content5 .a-title:hover{
-    background-color:rgba(84, 240, 84, 0.329);
+    background-color: #cae4fa;
 }
 .dropdown-content6 .a-title:hover{
-    background-color:rgba(84, 240, 84, 0.329);
+    background-color: #cae4fa;
 }
 .dropdown-content7 .a-title:hover{
-    background-color:rgba(84, 240, 84, 0.329);
+    background-color: #cae4fa;
 }
 .dropdown-content8 .a-title:hover{
-    background-color:rgba(84, 240, 84, 0.329);
+    background-color: #cae4fa;
 }
 .dropdown-content9 .a-title:hover{
-    background-color:rgba(84, 240, 84, 0.329);
+    background-color: #cae4fa;
 }
 
 
