@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <script src="Hr.js"></script>
     <title>პერსონალის მართვა</title>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
+    
 </head>
 <body>
     <div class="container">
@@ -51,7 +53,7 @@
                 <a href="#" class="a-title">თანამდებობები</a>
                 <a href="#" class="a-title">ფაკულტეტები და პროგრამები</a>
               </div>
-            <li class="list"><a href="#" class="a-title"><button onclick="myFunction2()" class="dropbtn2">პერსონალი<i class="down"></i></button></a></li>
+            <li class="list" style="background-color: #c8e5ff; border-radius: 10px"><a href="#" class="a-title"><button onclick="myFunction2()" class="dropbtn2">პერსონალი<i class="down"></i></button></a></li>
             <div id="myDropdown2" class="dropdown-content2">
                 <a href="personal.html" class="a-title">პერსონალის მართვა</a>
                 <a href="#" class="a-title">გამოკითხვის მართვა</a>
@@ -98,17 +100,222 @@
 
     <!-- Main Container -->
     <main>
+        <img src="Images/background.png" class="background-image-for-personal-main">
         <h1 class="bigtitle">პერსონალი</h1>
         <div class="forflex">
             <div class="ADDborder"><a href="addinformation.html" class="ADD">დამატება</a></div>
             <a href="#" class="forexcel"><img src="Images/excel.png" class="excel"></a>
         </div>
+        
+        <div class="Table-box">
+          <table id="example" class="display" style="width:100%">
+            <thead>
+                <tr>
+                    <th>სახელი</th>
+                    <th>გვარი</th>
+                    <th>პოზიცია</th>
+                    <th>ოფისი</th>
+                    <th>ხელფასი</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ბესიკი</td>
+                    <td>ტაბატაძე</td>
+                    <td></td>
+                    <td>თბილისი</td>
+                    <td>1275</td>
+                </tr>
+                <tr>
+                    <td>გიგა </td>
+                    <td>კიკორია</td>
+                    <td>მეცნიერ-თანამშრომელი</td>
+                    <td>თბილისი</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>გიორგი</td>
+                    <td>კრატსაშვილი</td>
+                    <td>დამხმარე პერსონალი</td>
+                    <td>თბილისი</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>გიორგკი</td>
+                    <td>ჩიხვაძე</td>
+                    <td>მოწვეული პერსონალი</td>
+                    <td>თბილისი</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>გრიგოლ</td>
+                    <td>ქურდაძე</td>
+                    <td>დამხმარე პერსონალი</td>
+                    <td>თბილისი</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>გურამ</td>
+                    <td>ღვინჯილია</td>
+                    <td>მეცნიერ-თანამშრომელი</td>
+                    <td>თბილისი</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>დავით</td>
+                    <td>ლომინაშვილი</td>
+                    <td>მოწვეული პერსონალი</td>
+                    <td>თბილისი</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>დავით </td>
+                    <td>მირზაშვილი</td>
+                    <td>დამხმარე პერსონალი</td>
+                    <td>თბილისი</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>ელენე</td>
+                    <td>ქავთუაშვილი</td>
+                    <td>მეცნიერ-თანამშრომელი</td>
+                    <td>თბილისი</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>თამარ</td>
+                    <td>ავალიანი</td>
+                    <td>უფროსი მეცნიერ-თანამშრომელი</td>
+                    <td>თბილისი</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>თამარ</td>
+                    <td>მსხვილიძე</td>
+                    <td>მეცნიერ-თანამშრომელი</td>
+                    <td>თბილისი</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>თამუნა</td>
+                    <td>მელანიშვილი</td>
+                    <td>სასწავლო პროცესის მართვის მენეჯერი</td>
+                    <td>თბილისი</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>თენგიზ</td>
+                    <td>რუსია</td>
+                    <td>სამსახურის უფროსი</td>
+                    <td>თბილისი</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>ირმა</td>
+                    <td>ნოზაძე</td>
+                    <td>მოწვეული პერსონალი</td>
+                    <td>თბილისი</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>კახა</td>
+                    <td>ფუტკარაძე</td>
+                    <td>Markup-dev</td>
+                    <td>თბილისი</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>ლია</td>
+                    <td></td>
+                    <td>მოწვეული პერსონალი</td>
+                    <td>თბილისი</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>მაია</td>
+                    <td>ცანავა</td>
+                    <td>დამხმარე პერსონალი</td>
+                    <td>თბილისი</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>მარიამ</td>
+                    <td>საჯაია</td>
+                    <td>დამხმარე პერსონალი</td>
+                    <td>თბილისი</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>მარიამ </td>
+                    <td>სვანიძე</td>
+                    <td>დმხმარე პერსონალი</td>
+                    <td>თბილისი</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>მარინე</td>
+                    <td></td>
+                    <td>ვეტერინარიის ინტეგრირებულ სამაგისტრო საგანმანათლებლო პროგრამის თანა-ხელმძღვანელი</td>
+                    <td>თბილისი</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>ნიკოლოზ</td>
+                    <td>პარჯანაძე</td>
+                    <td>განათლების ადმინისტრირების სამაგისტრო საგანმანათლებლო პროგრამა</td>
+                    <td>თბილისი</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>ნინო</td>
+                    <td></td>
+                    <td></td>
+                    <td>თბილისი</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>ნინო</td>
+                    <td>წერეთელი</td>
+                    <td>მთავარი მეცნიერ-თანამშრომელი</td>
+                    <td>თბილისი</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>ჯეირან</td>
+                    <td>მამედოვი</td>
+                    <td>დიზაინერი</td>
+                    <td>თბილისი</td>
+                    <td></td>
+                </tr>
+ 
+            </tbody>
+        </table>
+        </div>
     </main>
-
 
     <!-- Footer -->
     <footer><img src="Images/Vector2.png" class="footer"></footer>
 
   </div>  
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+
+
+  <script>
+  $(document).ready(function() {
+      $('#example').DataTable( {
+          columnDefs: [ {
+              targets: [ 0 ],
+              orderData: [ 0, 1 ]
+          }, {
+              targets: [ 1 ],
+              orderData: [ 1, 0 ]
+          }, {
+              targets: [ 4 ],
+              orderData: [ 4, 0 ]
+          } ]
+      } );
+  } );
+  </script>
 </body>
 </html>

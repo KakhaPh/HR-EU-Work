@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="Hr.js"></script>
-    <title>HR - Work (KP)</title>
+    <title>პირადი ინფორმაციის დამატება</title>
 </head>
 <body>
     <div class="container">
@@ -16,13 +16,13 @@
     
     <!-- First Line -->
     <div class="Firstline">
-        <a href="main.html"><img src="Images/Eu-logo.png" class="Eu-logo"></a>
-        <h4 class="Profile-mail">Kakha.Putkaradze@eu.edu.ge</h4>
-        <a href="#"><img src="Images/HRlogo.png" class="HRlogo"></a>
-        <a href="#"><img src="Images/Settings-icon.png" class="Settings-icon"></a>
-        <a href="#"><img src="Images/Bell-icon.png" class="Bell-icon"></a>
-        <a href="#"><img src="Images/BDcake-icon.png" class="BDcake-icon"></a>
-    </div>
+      <a href="main.html"><img src="Images/Eu-logo.png" class="Eu-logo"></a>
+      <h4 class="Profile-mail">Kakha.Putkaradze@eu.edu.ge</h4>
+      <a href="#"><img src="Images/HRlogo.png" class="HRlogo"></a>
+      <a href="#"><img src="Images/Settings-icon.png" class="Settings-icon"></a>
+      <a href="#"><img src="Images/Bell-icon.png" class="Bell-icon"></a>
+      <a href="#"><img src="Images/BDcake-icon.png" class="BDcake-icon"></a>
+  </div>
 
                         <!-- Navigation-bar-For-Mobile-And-Tablet -->
         <span class="Navigation-bar" onclick="openNav()">&#9776;</span>
@@ -51,7 +51,7 @@
                 <a href="#" class="a-title">თანამდებობები</a>
                 <a href="#" class="a-title">ფაკულტეტები და პროგრამები</a>
               </div>
-            <li class="list"><a href="#" class="a-title"><button onclick="myFunction2()" class="dropbtn2">პერსონალი<i class="down"></i></button></a></li>
+            <li class="list" style="background-color: #c8e5ff; border-radius: 10px"><a href="#" class="a-title"><button onclick="myFunction2()" class="dropbtn2">პერსონალი<i class="down"></i></button></a></li>
             <div id="myDropdown2" class="dropdown-content2">
                 <a href="personal.html" class="a-title">პერსონალის მართვა</a>
                 <a href="#" class="a-title">გამოკითხვის მართვა</a>
@@ -96,40 +96,44 @@
           </ul>
     </div>
 
-    <!-- Main Container -->
-    <main class="First-page-main">
-      <div class="container1">
-        <div class="For-text">
-          <div class="inbox1"></div>
-          <p class="text1">მიმდინარე რეგულაციები</p>
-        </div>
-        <div class="For-text">
-          <div class="inbox2"></div>
-          <p class="text2">დასვენების დღეები</p>
-        </div>
-        <div class="For-text">
-          <div class="inbox3"></div>
-          <p class="text3">ადმინისტრაციული პერსონალის აქტივობები</p>
-        </div>
-      </div>
+    <!-- Third line -->
+    <div class="for-list2-ull">
+        <ul class="Third-line">
+            <li class="list2" style="background-color: #c8e5ff; border-radius: 10px;"><a href="#" class="a-title2">პირადი ინფორმაცია</a></li>
+            <li class="list2"><a href="Position.html" class="a-title2">თანამდებობა</a></li>
+            <li class="list2"><a href="Education.html" class="a-title2">განათლება</a></li>
+            <li class="list2"><a href="#" class="a-title2">სამუშაო გამოცდილება</a></li>
+            <li class="list2"><a href="#" class="a-title2">ხელშეკრულება</a></li>
+            <li class="list2"><a href="#" class="a-title2">ბრძანებები</a></li>
+            <li class="list2"><a href="#" class="a-title2">დოკუმენტები</a></li>
+            <li class="list2"><a href="#" class="a-title2">სამეცნიერო მიღწევები</a></li>
+            <li class="list2"><a href="#" class="a-title2">დამატებითი უნარები</a></li>
+        </ul>
+    </div>
 
-      <div class="container2">
-        <div class="For-text-2">
-          <div class="inbox4"></div>
-          <p class="text4">პერსონალის რაოდენობრივი მაჩვენებელი</p>
+    <!-- Main Personal - Education-->
+    <main class="addinfmain">
+      <img src="Images/background.png" class="background-image">
+        <h1 class="bigtitle">განათლება</h1>
+        <div class="Education-add-box">
+            <h1 class="bigtitle">დამატება</h1>
+            <br><br><br>
+            <select class="select2">
+                <option>არასრული უმაღლესი</option>
+            </select>
+            <br>
+            <select class="select2">
+                <option>ევროპის უნივერსიტეტი</option>
+            </select>
+            <br>
+            <select class="select2">
+                <option>ინფორმატიკა</option>
+            </select>
+            <div class="schedule">
+                <img src="Images/schedule-icon.png" class="schedule-icon"> <input type="text" class="inputs" placeholder="დაწყება"> <input type="text" class="inputs" placeholder="დასრულება">
+            </div>
         </div>
-        <div class="For-text-2">
-          <div class="inbox5"></div>
-          <p class="text5">აფილირებული პერსონალის თანაფარდობა აკადემიურ და მოწვეულ პერსონალთან</p>
-        </div>
-      </div>
-
-      <div class="container3">
-          <div class="inbox6"></div>
-        </div>
-
-    </main>
-
+     </main>
 
     <!-- Footer -->
     <footer><img src="Images/Vector2.png" class="footer"></footer>

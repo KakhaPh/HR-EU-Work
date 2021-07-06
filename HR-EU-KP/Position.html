@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="Hr.js"></script>
-    <title>HR - Work (KP)</title>
+    <title>პერსონალის მართვა</title>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
+    
 </head>
 <body>
     <div class="container">
@@ -51,7 +53,7 @@
                 <a href="#" class="a-title">თანამდებობები</a>
                 <a href="#" class="a-title">ფაკულტეტები და პროგრამები</a>
               </div>
-            <li class="list"><a href="#" class="a-title"><button onclick="myFunction2()" class="dropbtn2">პერსონალი<i class="down"></i></button></a></li>
+            <li class="list" style="background-color: #c8e5ff; border-radius: 10px"><a href="#" class="a-title"><button onclick="myFunction2()" class="dropbtn2">პერსონალი<i class="down"></i></button></a></li>
             <div id="myDropdown2" class="dropdown-content2">
                 <a href="personal.html" class="a-title">პერსონალის მართვა</a>
                 <a href="#" class="a-title">გამოკითხვის მართვა</a>
@@ -96,44 +98,79 @@
           </ul>
     </div>
 
-    <!-- Main Container -->
-    <main class="First-page-main">
-      <div class="container1">
-        <div class="For-text">
-          <div class="inbox1"></div>
-          <p class="text1">მიმდინარე რეგულაციები</p>
-        </div>
-        <div class="For-text">
-          <div class="inbox2"></div>
-          <p class="text2">დასვენების დღეები</p>
-        </div>
-        <div class="For-text">
-          <div class="inbox3"></div>
-          <p class="text3">ადმინისტრაციული პერსონალის აქტივობები</p>
-        </div>
-      </div>
+        <!-- Third line -->
+    <div class="for-list2-ull">
+        <ul class="Third-line">
+            <li class="list2"><a href="addinformation.html" class="a-title2">პირადი ინფორმაცია</a></li>
+            <li class="list2" style="background-color: #c8e5ff; border-radius: 10px;"><a href="Position.html" class="a-title2">თანამდებობა</a></li>
+            <li class="list2"><a href="Education.html" class="a-title2">განათლება</a></li>
+            <li class="list2"><a href="#" class="a-title2">სამუშაო გამოცდილება</a></li>
+            <li class="list2"><a href="#" class="a-title2">ხელშეკრულება</a></li>
+            <li class="list2"><a href="#" class="a-title2">ბრძანებები</a></li>
+            <li class="list2"><a href="#" class="a-title2">დოკუმენტები</a></li>
+            <li class="list2"><a href="#" class="a-title2">სამეცნიერო მიღწევები</a></li>
+            <li class="list2"><a href="#" class="a-title2">დამატებითი უნარები</a></li>
+        </ul>
+    </div>
 
-      <div class="container2">
-        <div class="For-text-2">
-          <div class="inbox4"></div>
-          <p class="text4">პერსონალის რაოდენობრივი მაჩვენებელი</p>
-        </div>
-        <div class="For-text-2">
-          <div class="inbox5"></div>
-          <p class="text5">აფილირებული პერსონალის თანაფარდობა აკადემიურ და მოწვეულ პერსონალთან</p>
-        </div>
-      </div>
 
-      <div class="container3">
-          <div class="inbox6"></div>
+    <!-- Main Container - Position Panel -->
+    <main class="Position-main">
+        <img src="Images/background.png" class="background-image-for-position-main">
+        <h1 class="bigtitle">თანამდებობა</h1>
+        
+        <div class="positionbox1">
+            <div class="boxin">
+                <p class="Persinf">ძირითადი თანამდებობა</p> <select class="select2"><option>მეცნიერ-თანამშრომელი / გლობალიზაციის სამეცნიერო-კვლევითი ინსტიტუტი</option></select> 
+                <p class="Persinf">დამატებითი თანამდებობა</p> <select class="select2"><option>არ აქვს</option></select>
+                <p class="Persinf">აკადემიური თანამდებობა</p> <select class="select2"><option>არ აქვს</option></select>
+                <p class="Persinf">ფაკულტეტი</p> <select class="select2"><option> არ აქვს </option></select>
+                <p class="Persinf">საგანმანათლებლო პროგრამა</p> <select class="select2"><option>არ აქვს </option></select>
+                <p class="Persinf">აფილირება</p> <input type="radio" name="rad1" class="inprad2"><br><input type="radio" name="rad1" class="inprad2">
+            </div>
         </div>
 
+        <div class="positionbox2">
+            <div class="boxin2">
+                <h2 class="positiontext1" style="text-align: center;">ადმინისტრაციული პერსონალის ხელფასი</h2>
+                <br>
+                <p class="Persinf">ხელზე ასაღები</p>  <input type="text" class="inputs" placeholder="ხელზე ასაღები">
+                <p class="Persinf">საპენსიო გადასახადი</p> <input type="checkbox" class="position-checkbox">
+                <p class="Persinf">საშემოსავლო გადასახადი</p> <input type="text" class="inputs" placeholder="საშემოსავლო გადასახადი">
+                <p class="Persinf">საპენსიო გადასახადი</p> <input type="text" class="inputs" placeholder="საპენსიო გადასახადი">
+                <p class="Persinf">დარიცხული</p> <input type="text" class="inputs" placeholder="დარიცხული">
+            </div>
+            <div class="boxin3">
+                <h2 class="positiontext2" style="text-align: center">სხვა თანხები</h2>
+                <br>
+                <p class="Persinf">ჯანმრთელობის დაზღვევა</p> <input type="text"class="inputs" placeholder="ჯანმრთელობის დაზღვევა">
+                <p class="Persinf">კორპორატიული შეთავაზება 1</p> <input type="text"class="inputs" placeholder="კორპორატიული შეთავაზება 1">
+                <p class="Persinf">კორპორატიული შეთავაზება 2</p> <input type="text"class="inputs" placeholder="კორპორატიული შეთავაზება 2">
+                <p class="Persinf">კორპორატიული შეთავაზება 3</p> <input type="text"class="inputs" placeholder="კორპორატიული შეთავაზება 3">
+
+            </div>
+        </div>
+
+        <div class="positionbox3">
+            <div class="boxin4">
+                <h2 class="positiontext3" style="text-align: center">აკადემიური და მოწვეული პერსონალის ხელფასი</h2>
+                <br>
+                <p class="Persinf">საათობრივი ტარიფი</p> <input type="text" class="inputs">
+                <p class="Persinf">ხელზე ასაღები</p> <input type="text" class="inputs">
+                <p class="Persinf">საპენსიო გადასახადი</p>
+                <p class="Persinf">საშემოსავლო გადასახადი</p> <input type="text" class="inputs">
+                <p class="Persinf">საპენსიო გადასახადი</p> <input type="text" class="inputs">
+                <p class="Persinf">დარიცხული</p> <input type="text" class="inputs">
+            </div>
+        </div>
+
+        <div class="forsubmit"><input type="submit" value="დამატება"  class="infsubmit"></div>
     </main>
-
 
     <!-- Footer -->
     <footer><img src="Images/Vector2.png" class="footer"></footer>
 
   </div>  
+
 </body>
 </html>

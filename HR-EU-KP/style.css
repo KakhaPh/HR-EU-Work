@@ -9,7 +9,7 @@
 body{
     overflow-x: hidden;
 }
-/* Signin Form */
+                                                    /* Signin Form */
 .Signin{
     background-color: #bbcde1;
     margin: 3% 18%;
@@ -32,6 +32,7 @@ body{
     background-color: #ececec;
     border: solid 1px;
     outline: none;
+    box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .a-miss{
     font-size: 15px;
@@ -49,12 +50,12 @@ body{
     outline: none;
 }
 
-/* Header */
+                                                /* Header */
 .header{
    min-width:100%;
 }
 
-/* First Line */
+                                             /* First Line */
 
 .Eu-logo{
     position: absolute;
@@ -93,7 +94,7 @@ body{
     margin: 1.3%;
 }
 
-/* Navigation-bar-For-Mobile-And-Tablet */
+                                     /* Navigation-bar-For-Mobile-And-Tablet */
 
 .Navigation-bar{
     position: absolute;
@@ -172,12 +173,12 @@ body{
     transform: rotate(45deg);
 }
 
-/* Second Line */
+                                                 /* Second Line */
 div.sticky {
     position: -webkit-sticky;
     position: sticky;
     top: 10%;
-    background-color: white;
+
 }
 .for-list2-ull{
     margin-top: -40px;
@@ -237,7 +238,7 @@ div.sticky {
     transform: rotate(45deg);
 }
 
-/* Navbarhover */
+                                                  /* Navbarhover */
 button{
     background-color: transparent;
     color: black;         
@@ -461,13 +462,39 @@ button{
   
 .show,.show2,.show3,.show4,.show5,.show6,.show7,.show8,.show9 {display: block;}
 
-/* Main Container */
+
+
+                                                /* Main Container */
+.First-page-main{
+    max-height: 300px;
+}
 .addinfmain{
     position: absolute;
     min-width: 100%;
 }
-main{
-    max-height: 300px;
+.background-image-for-personal-main{
+    position: absolute;
+    z-index: -100;
+    width: 120%;
+    height: 1300px;
+    right: -100px;
+    top: 150px;
+}
+.background-image-for-position-main{
+    position: absolute;
+    z-index: -100;
+    width: 120%;
+    height: 2200px;
+    right: -250px;
+    top: 150px;
+}
+.background-image{
+    position: absolute;
+    z-index: -100;
+    width: 120%;
+    height: 980px;
+    right: -100px;
+    top: -250px;
 }
 .container1,.container2,.container3{
     border: none;
@@ -536,8 +563,10 @@ main{
     margin-left: 12%;
 }
 
-/* Main Personal - Table */
-
+                                                    /* Main Personal - Table */
+td{
+    text-align: center;
+}
 .forflex{
     display: flex;
 }
@@ -546,14 +575,14 @@ main{
     background-color: black;
     min-width: 120px;
     height: 30px;
-    position: absolute;
+    position: relative;
     top: 40%;
     left: 7%;
 }
 .excel{
-    position: absolute;
-    top: 39%;
-    left: 17%;
+    position: relative;
+    top: 0%;
+    left: 400%;
 }
 
 .ADD{
@@ -561,8 +590,15 @@ main{
     color: white;
     padding-left: 20%;
 }
+.Table-box{
+    border: solid 1px;
+    border-radius: 10px;
+    max-width: 90%;
+    margin: auto;
+    box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+}
 
-/* Main Personal - Add information */
+                                                    /* Main Personal - Add information */
 .bigtitle{
     text-align: center;
     margin-top: 2%;
@@ -576,6 +612,7 @@ main{
     display: flex;
     z-index: 10;
     box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: white;
 }
 .Persinf{
     padding: 10px;
@@ -603,17 +640,17 @@ main{
     outline: none;
     padding: 4px;
     float: right;
-    margin: -7.5% 20%;
+    margin: -7.5% 40%;
 
 }
-select{
+.select1{
     border: none;
     border-bottom: solid 1px;
     min-width: 200px;
     outline: none;
     padding: 4px;
     float: right;
-    margin: -7% 20%;
+    margin: -7% 40%;
 }
 .infsubmit{
     height: 30px;
@@ -632,35 +669,106 @@ select{
 .inprad{
     margin: 0% 0% 0% 30%;
 }
+                                            /* Main container - Poisition Panel */
+.Position-main{
+    min-width:100%;
+    
+}
+.positionbox1,.positionbox2,.positionbox3{
+    border: solid 1px;
+    border-radius: 10px;
+    max-width: 70%;
+    max-height: 600px;
+    margin: 20px auto;
+    z-index: 10;
+    box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: white;
+}           
+.positionbox2{
+    display:flex;
+}
+.boxin{
+    margin: 30px;
+}
+.boxin2{
+    width: 50%;
+    margin: 30px;
+}
+.boxin3{
+    width: 50%;
+    margin: 30px;
+}
+.boxin4{
+    width: 50%;
+    margin: auto;
+}
+.select2{
+    float: right;
+    width: 70%;
+    margin-right: 15%;
+    margin-top: -3%;
+    padding: 5px;;
+}
+.inprad2{
+    margin: auto;
+    position: absolute;
+    margin-left: 10%;
+    margin-top: -30px;
+}
 
+.position-checkbox{
+    float: right;
+    margin-right: 68%;
+    margin-top: -5%;
+}
+                                            /* Main container - Education panel */
+.Educ-ul{
+    display: flex;
+    list-style: none;
+    margin: auto;
+    width: 50%;
+}
+.Educ-li{
+    margin: 30px;
+    font-weight: bold;
+}
 
-/* Footer */
+.Education-add-box{
+    border: solid 1px;
+    border-radius: 10px;
+    max-width: 70%;
+    margin: auto;
+    background-color: white;
+}
+.schedule-icon{
+    width: 100px;
+}
+                                                      /* Footer */
 .footer{
-    margin-top: 700px;
+    margin-top: 720px;
     min-width: 100%;
 
 }
 
-/* Scroll Bar */
+                                                    /* Scroll Bar */
 ::-webkit-scrollbar {
     width: 10px;
 }
   
-  /* Track */
+
   ::-webkit-scrollbar-track {
     background: lightgrey; 
 }
    
-  /* Handle */
+
   ::-webkit-scrollbar-thumb {
     background: #2f345d; 
 }
-  
-  /* Handle on hover */
+
   ::-webkit-scrollbar-thumb:hover {
     background: #63aff7; 
 }
-
+                                                     /*  Resoponsive Design */
 @media only screen and (max-width:564px){
     .Navigation-bar{
         display: block;
