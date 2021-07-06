@@ -483,7 +483,7 @@ button{
 .background-image-for-position-main{
     position: absolute;
     z-index: -100;
-    width: 120%;
+    width: 150%;
     height: 2200px;
     right: -250px;
     top: 150px;
@@ -636,25 +636,26 @@ td{
 .inputs{
     border: none;
     border-bottom: solid 1px;
-    min-width: 200px;
+    max-width: 200px;
     outline: none;
     padding: 4px;
     float: right;
-    margin: -7.5% 40%;
+    margin: -7.5% 25%;
 
 }
 .select1{
     border: none;
     border-bottom: solid 1px;
-    min-width: 200px;
+    min-width: 175px;
     outline: none;
     padding: 4px;
     float: right;
-    margin: -7% 40%;
+    margin: -7% 25%;
 }
 .infsubmit{
     height: 30px;
     width: 150px;
+    margin-top: 20px;
     border-radius: 10px;
     background-color: black;
     color: white;
@@ -718,7 +719,7 @@ td{
 
 .position-checkbox{
     float: right;
-    margin-right: 68%;
+    margin-right: 65%;
     margin-top: -5%;
 }
                                             /* Main container - Education panel */
@@ -726,7 +727,7 @@ td{
     display: flex;
     list-style: none;
     margin: auto;
-    width: 50%;
+    width: 70%;
 }
 .Educ-li{
     margin: 30px;
@@ -737,11 +738,13 @@ td{
     border: solid 1px;
     border-radius: 10px;
     max-width: 70%;
+    height: 400px;
     margin: auto;
     background-color: white;
 }
 .schedule-icon{
-    width: 100px;
+    width: 40px;
+    margin-left: 150px;
 }
                                                       /* Footer */
 .footer{
