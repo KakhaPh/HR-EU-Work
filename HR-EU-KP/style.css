@@ -63,7 +63,7 @@ body{
 .header{
    min-width:100%;
 }
-
+                                                /* Second line HR logo DropDown */
 .action{
     float: right;
     margin-right: 5%;
@@ -90,7 +90,7 @@ body{
     margin-top: 40px;
     right: 80px;
     padding:10px 20px;
-    background: #e6f3ff;
+    background: #82c1fd;
     width: 200px;
     box-sizing: 0 5px 25px rgba(0,0,0,0.1);
     border-radius:15px;
@@ -112,7 +112,7 @@ body{
     right: 28px;
     width: 20px;
     height: 20px;
-    background: #e6f3ff;
+    background: #82c1fd;
     transform: rotate(45deg);
     
 }
@@ -122,12 +122,12 @@ body{
     font-size:18px;
     padding: 20px 0;
     font-weight: 500;
-    color: #555;
+    color: #fff;
     line-height: 1.2em;
 }
 .action .menu h3 span{
     font-size: 14px;
-    color: #cecece;
+    color: #fff;
     font-weight: 400;
 }
 .action .menu ul li{
@@ -149,7 +149,7 @@ body{
 .action .menu ul li a{
     display: inline-block;
     text-decoration: none;
-    color: #555;
+    color: #fff;
     font-weight: 500;
     transition: 0.5s;
 }
@@ -937,29 +937,29 @@ td{
     .text1,.text2,.text3{
         left: 20%;
     }
-}
-.bigtitle{
-    position: absolute;
-    margin-top: 100px;
-}
-.ADDborder,.excel{
-    margin-top: 150px;
-}
-.excel{
-    margin-left: -30px;
-}
-.Third-line{
-    display: none;
-}
-.Container{
-    flex-direction: column;
-    min-height: 100%;;
-    margin-top: 150px;
-}
-.select1,.select2,.inputs{
-    position: absolute;
-    width: 120px;
-    margin-top: -35px;
+    .bigtitle{
+        position: absolute;
+        margin-top: 100px;
+    }
+    .ADDborder,.excel{
+        margin-top: 150px;
+    }
+    .excel{
+        margin-left: -30px;
+    }
+    .Third-line{
+        display: none;
+    }
+    .Container{
+        flex-direction: column;
+        min-height: 100%;;
+        margin-top: 150px;
+    }
+    .select1,.select2,.inputs{
+        position: absolute;
+        width: 120px;
+        margin-top: -35px;
+    }
 }
 
 @media only screen and (max-width:1024px) and (min-width: 564px){
