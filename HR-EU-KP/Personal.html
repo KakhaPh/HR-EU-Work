@@ -5,27 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
     <script src="Hr.js"></script>
     <title>პერსონალის მართვა</title>
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
     
 </head>
 <body>
     <div class="container">
 
-    <!-- Header -->
-    <header><img src="Images/Vector.png" class="header"></header>
+        <!-- Header -->
+        <header><img src="Images/Vector.png" class="header"></header>
+        
+        <!-- First Line -->
+        <div class="Firstline">
+            <a href="main.html"><img src="Images/Eu-logo.png" class="Eu-logo"></a>
+              <div class="action">
+                    <div class="profile" onclick="menuToggle();"> 
+                        <img src="Images/HRlogo.png">
+                    </div>
+          
+                    <div class="menu"> <div class="menu "></div>
+                        <h3>კახა ფუტკარაძე<br><span>Administrator</span></h3>
+                        <ul>
+                            <li><i class="fas fa-user"></i><a href="#">პროფილი</a></li>
+                            <li><i class="fas fa-sign-out-alt"></i><a href="#">გასვლა</a></li>
+                        </ul>
+                    </div>
+            </div>
+            <a href="#"><img src="Images/Settings-icon.png" class="Settings-icon"></a>
+            <a href="#"><img src="Images/Bell-icon.png" class="Bell-icon"></a>
+            <a href="#"><img src="Images/BDcake-icon.png" class="BDcake-icon"></a>
+        </div>
     
-    <!-- First Line -->
-    <div class="Firstline">
-        <a href="main.html"><img src="Images/Eu-logo.png" class="Eu-logo"></a>
-        <h4 class="Profile-mail">Kakha.Putkaradze@eu.edu.ge</h4>
-        <a href="#"><img src="Images/HRlogo.png" class="HRlogo"></a>
-        <a href="#"><img src="Images/Settings-icon.png" class="Settings-icon"></a>
-        <a href="#"><img src="Images/Bell-icon.png" class="Bell-icon"></a>
-        <a href="#"><img src="Images/BDcake-icon.png" class="BDcake-icon"></a>
-    </div>
-
                         <!-- Navigation-bar-For-Mobile-And-Tablet -->
         <span class="Navigation-bar" onclick="openNav()">&#9776;</span>
         <div id="Navigation" class="Navigate">

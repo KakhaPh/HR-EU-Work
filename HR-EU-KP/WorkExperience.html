@@ -10,31 +10,32 @@
     <title>პირადი ინფორმაციის დამატება</title>
 </head>
 <body>
-  <div class="container">
+    <div class="container">
 
-    <!-- Header -->
-    <header><img src="Images/Vector.png" class="header"></header>
-    
-    <!-- First Line -->
-    <div class="Firstline">
-        <a href="main.html"><img src="Images/Eu-logo.png" class="Eu-logo"></a>
-          <div class="action">
-                <div class="profile" onclick="menuToggle();"> 
-                    <img src="Images/HRlogo.png">
-                </div>
-      
-                <div class="menu"> <div class="menu "></div>
-                    <h3>კახა ფუტკარაძე<br><span>Administrator</span></h3>
-                    <ul>
-                        <li><i class="fas fa-user"></i><a href="#">პროფილი</a></li>
-                        <li><i class="fas fa-sign-out-alt"></i><a href="#">გასვლა</a></li>
-                    </ul>
-                </div>
+        <!-- Header -->
+        <header><img src="Images/Vector.png" class="header"></header>
+        
+        <!-- First Line -->
+        <div class="Firstline">
+            <a href="main.html"><img src="Images/Eu-logo.png" class="Eu-logo"></a>
+              <div class="action">
+                    <div class="profile" onclick="menuToggle();"> 
+                        <img src="Images/HRlogo.png">
+                    </div>
+          
+                    <div class="menu"> <div class="menu "></div>
+                        <h3>კახა ფუტკარაძე<br><span>Administrator</span></h3>
+                        <ul>
+                            <li><i class="fas fa-user"></i><a href="#">პროფილი</a></li>
+                            <li><i class="fas fa-sign-out-alt"></i><a href="#">გასვლა</a></li>
+                        </ul>
+                    </div>
+            </div>
+            <a href="#"><img src="Images/Settings-icon.png" class="Settings-icon"></a>
+            <a href="#"><img src="Images/Bell-icon.png" class="Bell-icon"></a>
+            <a href="#"><img src="Images/BDcake-icon.png" class="BDcake-icon"></a>
         </div>
-        <a href="#"><img src="Images/Settings-icon.png" class="Settings-icon"></a>
-        <a href="#"><img src="Images/Bell-icon.png" class="Bell-icon"></a>
-        <a href="#"><img src="Images/BDcake-icon.png" class="BDcake-icon"></a>
-    </div>
+    
 
                         <!-- Navigation-bar-For-Mobile-And-Tablet -->
         <span class="Navigation-bar" onclick="openNav()">&#9776;</span>
@@ -111,10 +112,10 @@
     <!-- Third line -->
     <div class="for-list2-ull">
         <ul class="Third-line">
-            <li class="list2" style="background-color: #c8e5ff; border-radius: 10px;"><a href="addinformation.html" class="a-title2">პირადი ინფორმაცია</a></li>
+            <li class="list2"><a href="addinformation.html" class="a-title2">პირადი ინფორმაცია</a></li>
             <li class="list2"><a href="Position.html" class="a-title2">თანამდებობა</a></li>
             <li class="list2"><a href="Education.html" class="a-title2">განათლება</a></li>
-            <li class="list2"><a href="WorkExperience.html" class="a-title2">სამუშაო გამოცდილება</a></li>
+            <li class="list2" style="background-color: #c8e5ff; border-radius: 10px;"><a href="WorkExperience.html" class="a-title2">სამუშაო გამოცდილება</a></li>
             <li class="list2"><a href="Contract.html" class="a-title2">ხელშეკრულება</a></li>
             <li class="list2"><a href="Commands.html" class="a-title2">ბრძანებები</a></li>
             <li class="list2"><a href="#" class="a-title2">დოკუმენტები</a></li>
@@ -123,58 +124,23 @@
         </ul>
     </div>
 
-    <!-- Main Personal - Add information -->
+    <!-- Main Personal - Education-->
     <main class="addinfmain">
-      <img src="Images/background.png" class="background-image">
-      <h1 class="bigtitle">პირადი ინფრომაცია</h1>
-      <br><br>
-      <div class="Container">
-        <div class="container-left">
-            <p class="Persinf">სტატუსი</p> <select class="select1">
-                                          <option>აქტიური</option>
-                                          <option>არააქტიური</option>
-                                        </select>
-            <p class="Persinf">სახელი </p> <input type="text" class="inputs" placeholder="სახელი">
-            <p class="Persinf">გვარი </p> <input type="text" class="inputs" placeholder="გვარი">
-            <p class="Persinf">დაბადების თარიღი </p> <input type="text" class="inputs" placeholder="დაბადების თარიღი">
-            <p class="Persinf">ასაკი </p> <input type="text" class="inputs" placeholder="ასაკი">
-            <p class="Persinf1"><br>სქესი <br><input type="radio" name="rad1" class="inprad">მამრობითი<br><input type="radio" name="rad1" class="inprad">მდედრობითი <br></p>
-            <p class="Persinf">სახელი(ENG) </p> <input type="text" class="inputs" placeholder="სახელი(ENG)">
-            <p class="Persinf">გვარი(ENG) </p> <input type="text" class="inputs" placeholder="გვარი(ENG)">
-            <p class="Persinf">ოჯახური მდგომარეობა</p> 
-                                  <select class="select1">
-                                    <option>დაოჯახებული</option>
-                                    <option>დასაოჯახებელი</option>
-                                  </select>
-            <p class="Persinf">ქვეყანა </p>
-                                    <select class="select1">
-                                      <option>საქართველო</option>
-                                      <option>....</option>
-                                    </select>
-          </div>
-          
-          
-          <div class="container-right">
-            <p class="Persinf">ქალაქი </p>
-                                    <select class="select1">
-                                      <option>თბილისი</option>
-                                      <option>....</option>
-                                    </select>
-            <p class="Persinf">მისამართი </p> <input type="text" class="inputs" placeholder="მისამართი">
-            <p class="Persinf">მოქალაქეობა </p> <input type="text" class="inputs" placeholder="მოქალაქეობა">
-            <p class="Persinf">პირადი ნომერი </p> <input type="text" class="inputs" placeholder="პირადი ნომერი">
-            <p class="Persinf">მობილურის ნომერი </p> <input type="text" class="inputs"  placeholder="მობილურის ნომერი">
-            <p class="Persinf">დამატებით მობილურის ნომერი </p> <input type="text" class="inputs"  placeholder="დამატებით მობილურის ნომერი">
-            <p class="Persinf">სახლის ნომერი </p> <input type="text" class="inputs" placeholder="სახლის ნომერი">
-            <p class="Persinf">სამსახურის შიდა ნომერი </p> <input type="text" class="inputs" placeholder="სამსახურის შიდა ნომერი">
-            <p class="Persinf">ელ. ფოსტა(ეუ) </p> <input type="text" class="inputs" placeholder="ელ.ფოსტა(ეუ)">
-            <p class="Persinf">ელ. ფოსტა </p> <input type="text" class="inputs" placeholder="ელ. ფოსტა">
-        </div>
+        <img src="Images/background.png" class="background-image">
+        <h1 class="bigtitle">სამუშაო გამოცდილება</h1>
+        <div class="forflex">
+            <div class="ADDborder"><a href="AddWorkexperience.html" class="ADD">დამატება</a></div>
+        </div>   
 
-
-      </div>
-      <div class="forsubmit"><input type="submit" value="დამატება"  class="infsubmit"></div>
-   </main>
+        <ul class="Educ-ul">
+            <li class="Educ-li">ორგანიზაცია</li>
+            <li class="Educ-li">თანამდებობა</li>
+            <li class="Educ-li">ფუნქცია/მოვალეობა</li>
+            <li class="Educ-li">დაწყება</li>
+            <li class="Educ-li">დასრულება</li>
+            <li class="Educ-li">რედაქტირება</li>
+        </ul>
+     </main>
 
     <!-- Footer -->
     <footer><img src="Images/Vector2.png" class="footer"></footer>

@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
     <script src="Hr.js"></script>
     <title>HR - Work (KP)</title>
+
 </head>
 <body>
     <div class="container">
@@ -17,8 +19,19 @@
     <!-- First Line -->
     <div class="Firstline">
         <a href="main.html"><img src="Images/Eu-logo.png" class="Eu-logo"></a>
-        <h4 class="Profile-mail">Kakha.Putkaradze@eu.edu.ge</h4>
-        <a href="#"><img src="Images/HRlogo.png" class="HRlogo"></a>
+          <div class="action">
+                <div class="profile" onclick="menuToggle();"> 
+                    <img src="Images/HRlogo.png">
+                </div>
+      
+                <div class="menu"> <div class="menu "></div>
+                    <h3>კახა ფუტკარაძე<br><span>Administrator</span></h3>
+                    <ul>
+                        <li><i class="fas fa-user"></i><a href="#">პროფილი</a></li>
+                        <li><i class="fas fa-sign-out-alt"></i><a href="#">გასვლა</a></li>
+                    </ul>
+                </div>
+        </div>
         <a href="#"><img src="Images/Settings-icon.png" class="Settings-icon"></a>
         <a href="#"><img src="Images/Bell-icon.png" class="Bell-icon"></a>
         <a href="#"><img src="Images/BDcake-icon.png" class="BDcake-icon"></a>
@@ -135,5 +148,11 @@
     <footer><img src="Images/Vector2.png" class="footer"></footer>
 
   </div>  
+        <script>
+          function menuToggle(){
+              const toggleMenu = document.querySelector('.menu');
+              toggleMenu.classList.toggle('active')
+          }
+      </script>
 </body>
 </html>

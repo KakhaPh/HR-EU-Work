@@ -21,7 +21,7 @@ body{
 }
 .forform{
     position: fixed;
-    top: 40%;
+    top: 45%;
     left: 38%;
 
 }
@@ -49,11 +49,113 @@ body{
     border: none;
     outline: none;
 }
+.Signformlogo{
+    position: absolute;
+    width: 10%;
+    top: 28%;
+    left: 41%;
+    display: flex;
+    z-index: 1000;
+}
 
                                                 /* Header */
 .header{
    min-width:100%;
 }
+
+.action{
+    float: right;
+    margin-right: 5%;
+    margin-left: 2%;
+}
+.action .profile{ 
+    position: relative;
+    margin-top: 10px;
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    overflow:hidden;
+    cursor:pointer;
+}
+.action .profile img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    
+}
+.action .menu{
+    position: absolute;
+    top: 120px;
+    margin-top: 40px;
+    right: 80px;
+    padding:10px 20px;
+    background: #e6f3ff;
+    width: 200px;
+    box-sizing: 0 5px 25px rgba(0,0,0,0.1);
+    border-radius:15px;
+    transition:0.5s;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1000;
+    
+}
+.action .menu.active {
+    visibility: visible;
+    opacity: 1;
+    
+}
+.action .menu::before{
+    content: '';
+    position: absolute;
+    top: -5px;
+    right: 28px;
+    width: 20px;
+    height: 20px;
+    background: #e6f3ff;
+    transform: rotate(45deg);
+    
+}
+.action .menu h3{
+    width:100%;
+    text-align: center;
+    font-size:18px;
+    padding: 20px 0;
+    font-weight: 500;
+    color: #555;
+    line-height: 1.2em;
+}
+.action .menu h3 span{
+    font-size: 14px;
+    color: #cecece;
+    font-weight: 400;
+}
+.action .menu ul li{
+   list-style: none;
+   padding: 10px 0;
+   border-top: 1px solid rgba(0,0,0,0.05);
+   display: flex;
+   align-items: center;
+    
+}
+.action .menu ul li img{
+    max-width: 20px;
+    margin-left: 10px;
+    opacity: 0.5s;
+}
+.action .menu ul li:hover img{
+    opacity: 1;
+}
+.action .menu ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: 0.5s;
+}
+.action .menu ul li:hover a{
+    color: #0f0097;
+}
+
 
                                              /* First Line */
 
@@ -641,7 +743,15 @@ td{
     padding: 4px;
     float: right;
     margin: -7.5% 25%;
-
+}
+.inputs1{
+    border: none;
+    border-bottom: solid 1px;
+    width: 70%;
+    outline: none;
+    padding: 4px;
+    float: right;
+    margin: -5% 15%;
 }
 .select1{
     border: none;
@@ -728,6 +838,7 @@ td{
     list-style: none;
     margin: auto;
     width: 70%;
+    justify-content: center;
 }
 .Educ-li{
     margin: 30px;
@@ -745,6 +856,19 @@ td{
 .schedule-icon{
     width: 40px;
     margin-left: 150px;
+}
+
+                                            /* Main Cointainer - Work Experience panel  */
+                                    
+.inps{
+    border: none;
+    border-bottom: solid 1px;
+    float: right;
+    width: 70%;
+    margin-right: 15%;
+    margin-top: -3%;
+    padding: 5px;
+    outline: none;
 }
                                                       /* Footer */
 .footer{

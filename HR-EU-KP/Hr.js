@@ -137,9 +137,16 @@ function myFunction9() {
     }
   }
 
+// Nav-bar Mobile
+
   function openNav() {
       document.getElementById("Navigation").style.width = "250px";
   }
     
   function closeNav() {
       document.getElementById("Navigation").style.width = "0";}
+//  HR dropdown
+  function menuToggle(){
+    const toggleMenu = document.querySelector('.menu');
+    toggleMenu.classList.toggle('active')
+  }

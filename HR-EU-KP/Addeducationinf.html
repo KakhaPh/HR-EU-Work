@@ -5,24 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
     <script src="Hr.js"></script>
     <title>პირადი ინფორმაციის დამატება</title>
+    
 </head>
 <body>
-    <div class="container">
+  <div class="container">
 
     <!-- Header -->
     <header><img src="Images/Vector.png" class="header"></header>
     
     <!-- First Line -->
     <div class="Firstline">
-      <a href="main.html"><img src="Images/Eu-logo.png" class="Eu-logo"></a>
-      <h4 class="Profile-mail">Kakha.Putkaradze@eu.edu.ge</h4>
-      <a href="#"><img src="Images/HRlogo.png" class="HRlogo"></a>
-      <a href="#"><img src="Images/Settings-icon.png" class="Settings-icon"></a>
-      <a href="#"><img src="Images/Bell-icon.png" class="Bell-icon"></a>
-      <a href="#"><img src="Images/BDcake-icon.png" class="BDcake-icon"></a>
-  </div>
+        <a href="main.html"><img src="Images/Eu-logo.png" class="Eu-logo"></a>
+          <div class="action">
+                <div class="profile" onclick="menuToggle();"> 
+                    <img src="Images/HRlogo.png">
+                </div>
+      
+                <div class="menu"> <div class="menu "></div>
+                    <h3>კახა ფუტკარაძე<br><span>Administrator</span></h3>
+                    <ul>
+                        <li><i class="fas fa-user"></i><a href="#">პროფილი</a></li>
+                        <li><i class="fas fa-sign-out-alt"></i><a href="#">გასვლა</a></li>
+                    </ul>
+                </div>
+        </div>
+        <a href="#"><img src="Images/Settings-icon.png" class="Settings-icon"></a>
+        <a href="#"><img src="Images/Bell-icon.png" class="Bell-icon"></a>
+        <a href="#"><img src="Images/BDcake-icon.png" class="BDcake-icon"></a>
+    </div>
 
                         <!-- Navigation-bar-For-Mobile-And-Tablet -->
         <span class="Navigation-bar" onclick="openNav()">&#9776;</span>
@@ -99,12 +112,12 @@
     <!-- Third line -->
     <div class="for-list2-ull">
         <ul class="Third-line">
-            <li class="list2"><a href="#" class="a-title2">პირადი ინფორმაცია</a></li>
+            <li class="list2"><a href="addinformation.html" class="a-title2">პირადი ინფორმაცია</a></li>
             <li class="list2"><a href="Position.html" class="a-title2">თანამდებობა</a></li>
             <li class="list2" style="background-color: #c8e5ff; border-radius: 10px;"><a href="Education.html" class="a-title2">განათლება</a></li>
-            <li class="list2"><a href="#" class="a-title2">სამუშაო გამოცდილება</a></li>
-            <li class="list2"><a href="#" class="a-title2">ხელშეკრულება</a></li>
-            <li class="list2"><a href="#" class="a-title2">ბრძანებები</a></li>
+            <li class="list2"><a href="WorkExperience.html" class="a-title2">სამუშაო გამოცდილება</a></li>
+            <li class="list2"><a href="Contract.html" class="a-title2">ხელშეკრულება</a></li>
+            <li class="list2"><a href="Commands.html" class="a-title2">ბრძანებები</a></li>
             <li class="list2"><a href="#" class="a-title2">დოკუმენტები</a></li>
             <li class="list2"><a href="#" class="a-title2">სამეცნიერო მიღწევები</a></li>
             <li class="list2"><a href="#" class="a-title2">დამატებითი უნარები</a></li>
@@ -133,6 +146,7 @@
                 <img src="Images/schedule-icon.png" class="schedule-icon"> <input type="text" class="inputs" placeholder="დაწყება" style="position: absolute; margin-top: 1.85%; margin-left:40px;"> <input type="text" class="inputs" placeholder="დასრულება" style="position: absolute; margin-top: 1.85%; margin-left:270px;">
             </div>
         </div>
+        <div class="forsubmit"><input type="submit" value="შენახვა"  class="infsubmit"></div>
      </main>
 
     <!-- Footer -->
