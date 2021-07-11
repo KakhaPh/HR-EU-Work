@@ -12,15 +12,22 @@ body{
                                                     /* Signin Form */
 .Signin{
     background-color: #bbcde1;
-    background-image: url(Images/Signicons.png);
+}
+
+.Bigcont{
+    border: none;
+    max-width:50%;
+    margin: auto;
+    height: 600px;
+    background-image: url(images/Signicons.png);
     background-repeat: no-repeat;
+    background-size: 110%;
 }
 
 .forform{
     position: fixed;
     top: 45%;
     left: 38%;
-
 }
 .signin_input{
     padding: 10px;
@@ -30,6 +37,10 @@ body{
     border: solid 1px;
     outline: none;
     box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.signin_input:hover{
+    background-color:#ffffff;
+    transition: 1s;
 }
 .a-miss{
     font-size: 15px;
@@ -45,11 +56,16 @@ body{
     color: white;
     border: none;
     outline: none;
+    cursor: pointer;
+}
+.submit:hover{
+    background-color: #1a297b;
+    transition: 1s;
 }
 .Signformlogo{
     position: absolute;
     width: 10%;
-    top: 28%;
+    top: 23%;
     left: 44%;
     display: flex;
     z-index: 1000;
@@ -992,6 +1008,37 @@ td{
 }
                                                      /*  Resoponsive Design */
 @media only screen and (max-width:564px){
+    .Bigcont{
+        border: solid;
+        max-width: 100%;
+        height: 520px;
+        background-size: 120% 120%;
+
+    }
+    .forform{
+        position: fixed;
+        margin: auto;
+    }
+    .submit{
+        min-width: 200px;
+    }
+    .signin_input{
+        padding: 10px;
+        border-radius: 10px;
+        min-width: 200px;
+        background-color: #ececec;
+        border: solid 1px;
+        outline: none;
+        box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .Signformlogo{
+        margin: auto;
+        width: 25%;
+    }
+    .a-miss{
+        max-width: 20px;
+        margin-right: 65px;
+    }
     .Navigation-bar{
         display: block;
         top: 1%;
@@ -1083,6 +1130,10 @@ td{
         margin-top: 2.5%;
         margin-left: 5%;
         min-width: 4%;
+    }
+    .action .menu{
+        right: 3.5%;
+        top:10%;
     }
     .Profile-mail{
         display: none
