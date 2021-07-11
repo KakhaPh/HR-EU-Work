@@ -12,14 +12,10 @@ body{
                                                     /* Signin Form */
 .Signin{
     background-color: #bbcde1;
-    margin: 3% 18%;
+    background-image: url(Images/Signicons.png);
+    background-repeat: no-repeat;
 }
 
-.signicons{
-    width: 1000px;
-    height: 500px;
-    margin-top: 20px;
-}
 .forform{
     position: fixed;
     top: 45%;
@@ -54,15 +50,16 @@ body{
     position: absolute;
     width: 10%;
     top: 28%;
-    left: 41%;
+    left: 44%;
     display: flex;
     z-index: 1000;
 }
 
                                                 /* Header */
 .header{
-   min-width:100%;
+   min-width: 100%;
 }
+
                                                 /* Second line HR logo DropDown */
 .action{
     float: right;
@@ -86,11 +83,10 @@ body{
 }
 .action .menu{
     position: absolute;
-    top: 120px;
-    margin-top: 40px;
-    right: 80px;
+    margin-top: 1%;
+    right: 60px;
     padding:10px 20px;
-    background: #82c1fd;
+    background: #e6f3ff;
     width: 200px;
     box-sizing: 0 5px 25px rgba(0,0,0,0.1);
     border-radius:15px;
@@ -106,13 +102,13 @@ body{
     
 }
 .action .menu::before{
-    content: '';
+    content: ' ';
     position: absolute;
     top: -5px;
     right: 28px;
     width: 20px;
     height: 20px;
-    background: #82c1fd;
+    background: #e6f3ff;
     transform: rotate(45deg);
     
 }
@@ -122,12 +118,12 @@ body{
     font-size:18px;
     padding: 20px 0;
     font-weight: 500;
-    color: #fff;
+    color: black;
     line-height: 1.2em;
 }
 .action .menu h3 span{
     font-size: 14px;
-    color: #fff;
+    color: black;
     font-weight: 400;
 }
 .action .menu ul li{
@@ -149,17 +145,23 @@ body{
 .action .menu ul li a{
     display: inline-block;
     text-decoration: none;
-    color: #fff;
+    color: black;
     font-weight: 500;
     transition: 0.5s;
 }
 .action .menu ul li:hover a{
     color: #0f0097;
 }
+.F-Mob{
+    display: none;
+}
 
 
                                              /* First Line */
-
+.Firstline{
+    border: none;
+    height: 1px;
+}
 .Eu-logo{
     position: absolute;
     top: 6%;
@@ -199,6 +201,102 @@ body{
 
                                      /* Navigation-bar-For-Mobile-And-Tablet */
 
+
+.accordion{
+    list-style-type: none
+}
+
+.cont1{
+    margin-top: -30px;
+}
+.accordion {
+    width: 100%;
+    margin: 30px auto 20px;
+    background: #b8b3b3;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 0px
+}
+
+.accordion .link {
+    cursor: pointer;
+    display: block;
+    padding: 15px 15px 15px 42px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    border-bottom: 1px solid #fff;
+    position: relative;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease
+}
+.accordion .link:hover{
+    color: #373b74
+}
+.accordion li:last-child .link {
+    border-bottom: 0
+}
+
+.accordion li i {
+    position: absolute;
+    top: 16px;
+    left: 12px;
+    font-size: 18px;
+    color: #373b74;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease
+}
+
+.accordion li i.fa-chevron-down {
+    right: 12px;
+    left: auto;
+    font-size: 16px
+}
+
+.accordion li.open .link {
+    color: #373b74
+}
+
+.accordion li.open i {
+    color: #373b74
+}
+
+.accordion li.open i.fa-chevron-down {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg)
+}
+
+.submenu {
+    display: none;
+    width: 100%;
+    background: #444359;
+    font-size: 14px
+}
+
+.submenu li {
+    border-bottom: 1px solid #4b4a5e
+}
+
+.submenu a {
+    display: block;
+    text-decoration: none;
+    color: #d9d9d9;
+    padding: 12px;
+    padding-left: 42px;
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease
+}
+
+.submenu a:hover {
+    background: #373b74;
+    color: #FFF
+}
+
 .Navigation-bar{
     position: absolute;
     color: rgb(11, 13, 83);
@@ -206,7 +304,7 @@ body{
     background-color: white;
     display: block;
     top:11%;
-    left:1%;
+    left: 1%;
     cursor: pointer;
     display: none;
 }
@@ -242,7 +340,7 @@ body{
     top: 0;
     right: 25px;
     font-size: 36px;
-    margin-left: 50px;
+    margin-left: 0px;
     cursor: pointer;
 }
 .Navigate .out {
@@ -255,7 +353,6 @@ body{
 }
 .out{
     color:#6f7171;
-    padding: 10px;
     border: none;
     
 }
@@ -278,8 +375,7 @@ body{
 
                                                  /* Second Line */
 div.sticky {
-    position: -webkit-sticky;
-    position: sticky;
+    position: relative;
     top: 10%;
 
 }
@@ -306,7 +402,7 @@ div.sticky {
 }
 .list,.list2{
     border: none;
-    min-width: 10%;
+    min-width: 11%;
     max-height: 20px;
     display: flex;
     padding: 20px;
@@ -390,7 +486,7 @@ button{
     border-radius: 10px;
     position:absolute;
     top: 84%;
-    left: 25%;
+    left: 27%;
     min-width: 160px;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -402,7 +498,7 @@ button{
     border-radius: 10px;
     position:absolute;
     top: 84%;
-    left: 34%;
+    left: 36%;
     min-width: 160px;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -414,7 +510,7 @@ button{
     border-radius: 10px;
     position:absolute;
     top: 84%;
-    left: 42%;
+    left: 46%;
     min-width: 160px;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -426,7 +522,7 @@ button{
     border-radius: 10px;
     position:absolute;
     top: 84%;
-    left: 50%;
+    left: 56%;
     min-width: 160px;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -438,7 +534,7 @@ button{
     border-radius: 10px;
     position:absolute;
     top: 84%;
-    left: 58%;
+    left: 66%;
     min-width: 160px;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -450,7 +546,7 @@ button{
     border-radius: 10px;
     position:absolute;
     top: 84%;
-    left: 67%;
+    left: 76%;
     min-width: 160px;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -462,7 +558,7 @@ button{
     border-radius: 10px;
     position:absolute;
     top: 84%;
-    left: 76%;
+    left: 83%;
     min-width: 160px;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -569,7 +665,7 @@ button{
 
                                                 /* Main Container */
 .First-page-main{
-    max-height: 300px;
+    max-height: 100px;
 }
 .addinfmain{
     position: absolute;
@@ -599,7 +695,7 @@ button{
     right: -100px;
     top: -250px;
 }
-.container1,.container2,.container3{
+.container1,.container2{
     border: none;
     margin: 5% auto;
     max-width: 80%;
@@ -614,8 +710,12 @@ button{
 }
 .For-text-2{
     border: none;
-    min-width: 50%;
-    padding: 10px;
+    max-width: 28%;
+    min-height: 200px;
+}
+.For-text-3{
+    border: none;
+    width: 32%;
     min-height: 200px;
 }
 
@@ -625,19 +725,13 @@ button{
     min-width: 28%;
     height: 200px;
 }
-.inbox4,.inbox5{
+.inbox4,.inbox5,.inbox6{
     border: solid 1px;
     border-radius: 10px;
-    min-width: 100%;
+    min-width: 28%;
     height: 200px;
 }
-.inbox6{
-    border:solid 1px;
-    border-radius: 10px;
-    margin: auto;
-    min-width: 80%;
-    min-height: 230px;
-}
+
 .text1,.text2,.text3,.text4,.text5{
     max-width: 80%;
     text-align: center;
@@ -906,13 +1000,11 @@ td{
         position: absolute;
         top: -2%;
         left: 5%;
-        width: 65%;
+        width: 80%;
         height: 80px;
     }
-    .BDcake-icon,.Bell-icon,.Settings-icon,.HRlogo{
-        margin-top: 8%;
-        margin-left: 5%;
-        min-width: 5%;  
+    .BDcake-icon,.Bell-icon,.Settings-icon{
+        display: none; 
     }
     .Profile-mail{
         display: none
@@ -923,12 +1015,27 @@ td{
     .header,.footer{
         display: none;
     }
-    .container1,.container2,.container3{
+    .action .menu{
+        right: 2%;
+        top:16%;
+    }
+    .F-Mob{
+        display: block;
+    }
+    .Firstline{
+        border: none;
+        height:70px;
+    }
+    .container1,.container2{
         flex-direction: column;
     }
     .For-text{
-        margin: 30% 10% -2% 20%;
-        min-width: 80%;
+        margin: 5%;
+        max-width: 60%;
+    }
+    .For-text-2,.For-text-3{
+        margin: 5% auto;
+        min-width: 100%;
     }
     .inbox1,.inbox2,.inbox3{
         margin: auto;
@@ -968,14 +1075,14 @@ td{
         top: 1%;
     }
     .Eu-logo{
-        top: 1%;
+        top: -1.5%;
         left: 6%;
         min-width: 30%;
     }
-    .BDcake-icon,.Bell-icon,.Settings-icon,.HRlogo{
-        margin-top: 3%;
+    .BDcake-icon,.Bell-icon,.Settings-icon{
+        margin-top: 2.5%;
         margin-left: 5%;
-        min-width: 4%;  
+        min-width: 4%;
     }
     .Profile-mail{
         display: none
@@ -986,18 +1093,20 @@ td{
     .header,.footer{
         display: none;
     }
-    .container1,.container2,.container3{
+    .Firstline{
+        border: none;
+        height: 100px;
+    }
+    .container1,.container2{
         flex-direction: column;
     }
     .For-text{
-        margin: 30% 10% -2% 20%;
+        margin-top: 100px;
+        margin: 5% auto;
         min-width: 80%;
     }
-    .inbox1,.inbox2,.inbox3{
-        margin: auto;
-        min-width: 150%;
-    }
-    .text1,.text2,.text3{
-        left: 20%;
+    .For-text-2,.For-text-3{
+        margin: 5% auto;
+        min-width: 80%;
     }
 }

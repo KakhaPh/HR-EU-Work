@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href='https://use.fontawesome.com/releases/v5.7.2/css/all.css'>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
     <script src="Hr.js"></script>
     <title>პერსონალის მართვა</title>
     
@@ -29,30 +32,99 @@
                         <ul>
                             <li><i class="fas fa-user"></i><a href="#">პროფილი</a></li>
                             <li><i class="fas fa-sign-out-alt"></i><a href="#">გასვლა</a></li>
-                        </ul>
-                    </div>
-            </div>
+                                                    <!-- for mobile  -->
+                            <div class="F-Mob">
+                                <li class="F-Mob"><i class="fas fa-birthday-cake"></i><a href="#">დაბადების დღე</a></li>
+                                <li class="F-Mob"><i class="fas fa-bell"></i><a href="#">შეტყობინებები</a></li>
+                                <li class="F-Mob"><i class="fas fa-cog"></i><a href="#">პარამეტრები</a></li>
+                           </div>
+                        </div>
+                    </ul>
+                </div>
+            
             <a href="#"><img src="Images/Settings-icon.png" class="Settings-icon"></a>
             <a href="#"><img src="Images/Bell-icon.png" class="Bell-icon"></a>
             <a href="#"><img src="Images/BDcake-icon.png" class="BDcake-icon"></a>
+        
         </div>
+      
     
                         <!-- Navigation-bar-For-Mobile-And-Tablet -->
-        <span class="Navigation-bar" onclick="openNav()">&#9776;</span>
-        <div id="Navigation" class="Navigate">
-            <i href="javascript:void(0)" class="out" onclick="closeNav()">&times;</i>    
-            <li class="nav-list"><a href="#" class="a-title">სტრუქტურა<i class="nvicon"></i></a></li>
-            <li class="nav-list"><a href="#" class="a-title">პერსონალი<i class="nvicon"></i></a></li>
-            <li class="nav-list"><a href="#" class="a-title">ვაკანსიები<i class="nvicon"></i></a></li>
-            <li class="nav-list"><a href="#" class="a-title">შვებულება<i class="nvicon"></i></a></li>
-            <li class="nav-list"><a href="#" class="a-title">მოტივაცია<i class="nvicon"></i></a></li>
-            <li class="nav-list"><a href="#" class="a-title">შეფასება<i class="nvicon"></i></a></li>
-            <li class="nav-list"><a href="#" class="a-title">ტრენინგები<i class="nvicon"></i></a></li>
-            <li class="nav-list"><a href="#" class="a-title">მრჩეველი<i class="nvicon"></i></a></li>
-            <li class="nav-list"><a href="#" class="a-title">ბრძანებები<i class="nvicon"></i></a></li>
-            <li class="nav-list"><a href="#" class="a-title">პარამეტრები<i class="nvicon"></i></a></li>
+            <span class="Navigation-bar" onclick="openNav()">&#9776;</span>
+    <div id="Navigation" class="Navigate">
+        <i href="javascript:void(0)" class="out" onclick="closeNav()">&times;</i> 
+    <div class="cont1">
+        <ul id="accordion" class="accordion">
+            <li>
+                <div class="link"><i class="fas fa-sitemap"></i>სტრუქტურა<i class="fa fa-chevron-down"></i></div>
+                <ul class="submenu">
+                    <li><a href="#">ძირითადი ერთეულები</a></li>
+                    <li><a href="#">ქვემდებარე ერთეულები</a></li>
+                    <li><a href="#">თანამდებობები</a></li>
+                    <li><a href="#">ფაკულტეტი და პროგრამები</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="link"><i class="fas fa-users"></i>პერსონალი<i class="fa fa-chevron-down"></i></div>
+                <ul class="submenu">
+                    <li><a href="#">პერსონალის მართვა</a></li>
+                    <li><a href="#">გამოკითხვის მართვა</a></li>
+                    <li><a href="#">გამოკითხვები</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="link"><i class="fas fa-hand-holding-usd"></i>ვაკანსიები<i class="fa fa-chevron-down"></i></div>
+                <ul class="submenu">
+                    <li><a href="#">ვაკანსიის ფორმირება</a></li>
+                    <li><a href="#">არქივი</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="link"><i class="fas fa-plane"></i>შვებულება<i class="fa fa-chevron-down"></i></div>
+                <ul class="submenu">
+                    <li><a href="#">შვებულების ფორმირება</a></li>
+                    <li><a href="#">ჩემი შვებულება</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="link"><i class="fas fa-fist-raised"></i>მოტივაცია<i class="fa fa-chevron-down"></i></div>
+                <ul class="submenu">
+                    <li><a href="#">მოტივაციის ფორმირება</a></li>
+                    <li><a href="#">ჩემი მოტივაცია</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="link"><i class="fa fa-certificate"></i>შეფასება<i class="fa fa-chevron-down"></i></div>
+                <ul class="submenu">
+                    <li><a href="#">კითხვარი</a></li>
+                    <li><a href="#">კითხვარის მართვა</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="link"><i class="far fa-sticky-note"></i>ტრენინგები<i class="fa fa-chevron-down"></i></div>
+                <ul class="submenu">
+                    <li><a href="#">ტრენინგის ფორმირება</a></li>
+                    <li><a href="#">ჩემი ტრენინგი</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="link"><i class="far fa-question-circle"></i>მრჩეველი<i class="fa fa-chevron-down"></i></div>
+                <ul class="submenu">
+                    <li><a href="#">რეპორტები</a></li>
+                    <li><a href="#">სტატისტიკა</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="link"><i class="fas fa-exclamation"></i>ბრძანება<i class="fa fa-chevron-down"></i></div>
+                <ul class="submenu">
+                    <li><a href="#">ბრძანების ფორმირება</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>   
+    
+    </div>
 
-        </div>
 
     <!-- Second line -->
     <div class="sticky"> 
@@ -104,7 +176,6 @@
             <div id="myDropdown9" class="dropdown-content9">
               <a href="#" class="a-title">ბრძანებების ფორმირება</a>
           </div>
-            <li class="list"><a href="#" class="a-title"><button onclick="myfunction10()">პარამეტრები<i class="down"></i></button></a></li>
           </div>
           </ul>
     </div>
