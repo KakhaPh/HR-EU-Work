@@ -141,10 +141,14 @@ function myFunction9() {
 
   function openNav() {
       document.getElementById("Navigation").style.width = "250px";
+      document.body.style.backgroundColor = "rgba(0,0,0,0.3)";
+      
   }
     
   function closeNav() {
-      document.getElementById("Navigation").style.width = "0";}
+      document.getElementById("Navigation").style.width = "0";
+      document.body.style.backgroundColor = "#fff";
+    }
 
     $(function() {
       var Accordion = function(el, multiple) {

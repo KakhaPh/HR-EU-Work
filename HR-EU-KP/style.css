@@ -18,7 +18,7 @@ body{
     border: none;
     max-width:50%;
     margin: auto;
-    height: 600px;
+    min-height: 1000px;
     background-image: url(images/Signicons.png);
     background-repeat: no-repeat;
     background-size: 110%;
@@ -64,9 +64,9 @@ body{
 }
 .Signformlogo{
     position: absolute;
-    width: 10%;
-    top: 23%;
-    left: 44%;
+    width: 60%;
+    top: -100%;
+    left: 22%;
     display: flex;
     z-index: 1000;
 }
@@ -228,7 +228,7 @@ body{
 .accordion {
     width: 100%;
     margin: 30px auto 20px;
-    background: #b8b3b3;
+    background: #cccccc;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 0px
@@ -248,7 +248,7 @@ body{
     transition: all 0.4s ease
 }
 .accordion .link:hover{
-    color: #373b74
+    color: #373b74;
 }
 .accordion li:last-child .link {
     border-bottom: 0
@@ -289,7 +289,7 @@ body{
 .submenu {
     display: none;
     width: 100%;
-    background: #444359;
+    background: #373b74;
     font-size: 14px
 }
 
@@ -309,7 +309,7 @@ body{
 }
 
 .submenu a:hover {
-    background: #373b74;
+    background: #1c2764;
     color: #FFF
 }
 
@@ -331,7 +331,7 @@ body{
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #b8b3b3;
+    background-color: #cccccc;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -838,18 +838,18 @@ td{
 }
 
 .container-left{
-    width: 70%;
-    margin: 5% auto auto 5%;
+    width: 30%;
+    margin: 2% auto auto 10%;
 }
 .container-right{
     margin: 2% auto auto 5%;
-    width: 70%;
+    width: 30%;
 }
 
 .inputs{
     border: none;
     border-bottom: solid 1px;
-    max-width: 200px;
+    min-width: 175px;
     outline: none;
     padding: 4px;
     float: right;
@@ -940,7 +940,7 @@ td{
 
 .position-checkbox{
     float: right;
-    margin-right: 65%;
+    margin-right: 52%;
     margin-top: -5%;
 }
                                             /* Main container - Education panel */
@@ -1007,7 +1007,7 @@ td{
     background: #63aff7; 
 }
                                                      /*  Resoponsive Design */
-@media only screen and (max-width:564px){
+@media only screen and (max-width:763px){
     .Bigcont{
         border: solid;
         max-width: 100%;
@@ -1045,8 +1045,8 @@ td{
     }
     .Eu-logo{
         position: absolute;
-        top: -2%;
-        left: 5%;
+        top: -1%;
+        left: 4%;
         width: 80%;
         height: 80px;
     }
@@ -1116,7 +1116,7 @@ td{
     }
 }
 
-@media only screen and (max-width:1024px) and (min-width: 564px){
+@media only screen and (max-width:1024px) and (min-width: 768px){
     .Navigation-bar{
         display: block;
         top: 1%;
