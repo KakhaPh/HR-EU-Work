@@ -35,6 +35,7 @@
                                               <!-- for mobile  -->
                       <div class="F-Mob">
                           <li class="F-Mob"><i class="fas fa-birthday-cake"></i><a href="#">დაბადების დღე</a></li>
+                          <li class="F-Mob"><i class="far fa-comments"></i><a href="#">წერილები</a></li>
                           <li class="F-Mob"><i class="fas fa-bell"></i><a href="#">შეტყობინებები</a></li>
                           <li class="F-Mob"><i class="fas fa-cog"></i><a href="#">პარამეტრები</a></li>
                      </div>
@@ -44,6 +45,7 @@
       
       <a href="#"><img src="Images/Settings-icon.png" class="Settings-icon"></a>
       <a href="#"><img src="Images/Bell-icon.png" class="Bell-icon"></a>
+      <a href="#"><img src="Images/messages.png" class="messages-icon"></a>
       <a href="#"><img src="Images/BDcake-icon.png" class="BDcake-icon"></a>
   
   </div>
@@ -202,17 +204,18 @@
       <br><br>
       <div class="Container">
         <div class="container-left">
+            <form action="#">
             <p class="Persinf">სტატუსი</p> <select class="select1">
                                           <option>აქტიური</option>
                                           <option>არააქტიური</option>
                                         </select>
-            <p class="Persinf">სახელი </p> <input type="text" class="inputs" placeholder="სახელი">
-            <p class="Persinf">გვარი </p> <input type="text" class="inputs" placeholder="გვარი">
-            <p class="Persinf">დაბადების თარიღი </p> <input type="text" class="inputs" placeholder="დაბადების თარიღი">
-            <p class="Persinf">ასაკი </p> <input type="text" class="inputs" placeholder="ასაკი">
-            <p class="Persinf1"><br>სქესი <br><input type="radio" name="rad1" class="inprad">მამრობითი<br><input type="radio" name="rad1" class="inprad">მდედრობითი <br></p>
-            <p class="Persinf">სახელი(ENG) </p> <input type="text" class="inputs" placeholder="სახელი(ENG)">
-            <p class="Persinf">გვარი(ENG) </p> <input type="text" class="inputs" placeholder="გვარი(ENG)">
+            <p class="Persinf">სახელი </p> <input type="text" class="inputs" placeholder="სახელი" required>
+            <p class="Persinf">გვარი </p> <input type="text" class="inputs" placeholder="გვარი" required>
+            <p class="Persinf">დაბადების თარიღი </p> <input type="text" class="inputs" placeholder="დაბადების თარიღი" required>
+            <p class="Persinf">ასაკი </p> <input type="text" class="inputs" placeholder="ასაკი" required>
+            <p class="Persinf1"><br>სქესი <br><input type="radio" name="rad1" class="inprad">მამრობითი<br><input type="radio" name="rad1" class="inprad" required>მდედრობითი <br></p>
+            <p class="Persinf">სახელი(ENG) </p> <input type="text" class="inputs" placeholder="სახელი(ENG)" required>
+            <p class="Persinf">გვარი(ENG) </p> <input type="text" class="inputs" placeholder="გვარი(ENG)" required>
             <p class="Persinf">ოჯახური მდგომარეობა</p> 
                                   <select class="select1">
                                     <option>დაოჯახებული</option>
@@ -227,25 +230,28 @@
           
           
           <div class="container-right">
+              <form action="#">
             <p class="Persinf">ქალაქი </p>
                                     <select class="select1">
                                       <option>თბილისი</option>
                                       <option>....</option>
                                     </select>
-            <p class="Persinf">მისამართი </p> <input type="text" class="inputs" placeholder="მისამართი">
-            <p class="Persinf">მოქალაქეობა </p> <input type="text" class="inputs" placeholder="მოქალაქეობა">
-            <p class="Persinf">პირადი ნომერი </p> <input type="text" class="inputs" placeholder="პირადი ნომერი">
-            <p class="Persinf">მობილურის ნომერი </p> <input type="text" class="inputs"  placeholder="მობილურის ნომერი">
-            <p class="Persinf">დამატებით მობილურის ნომერი </p> <input type="text" class="inputs"  placeholder="დამატებით მობილურის ნომერი">
-            <p class="Persinf">სახლის ნომერი </p> <input type="text" class="inputs" placeholder="სახლის ნომერი">
-            <p class="Persinf">სამსახურის შიდა ნომერი </p> <input type="text" class="inputs" placeholder="სამსახურის შიდა ნომერი">
-            <p class="Persinf">ელ. ფოსტა(ეუ) </p> <input type="text" class="inputs" placeholder="ელ.ფოსტა(ეუ)">
-            <p class="Persinf">ელ. ფოსტა </p> <input type="text" class="inputs" placeholder="ელ. ფოსტა">
+            <p class="Persinf">მისამართი </p> <input type="text" class="inputs" placeholder="მისამართი" required>
+            <p class="Persinf">მოქალაქეობა </p> <input type="text" class="inputs" placeholder="მოქალაქეობა" required>
+            <p class="Persinf">პირადი ნომერი </p> <input type="text" class="inputs" placeholder="პირადი ნომერი" required>
+            <p class="Persinf">მობილურის ნომერი </p> <input type="text" class="inputs"  placeholder="მობილურის ნომერი" required>
+            <p class="Persinf">დამატებით მობილურის ნომერი </p> <input type="text" class="inputs"  placeholder="დამატებით მობილურის ნომერი" required>
+            <p class="Persinf">სახლის ნომერი </p> <input type="text" class="inputs" placeholder="სახლის ნომერი" required>
+            <p class="Persinf">სამსახურის შიდა ნომერი </p> <input type="text" class="inputs" placeholder="სამსახურის შიდა ნომერი" required>
+            <p class="Persinf">ელ. ფოსტა(ეუ) </p> <input type="text" class="inputs" placeholder="ელ.ფოსტა(ეუ)" required>
+            <p class="Persinf">ელ. ფოსტა </p> <input type="text" class="inputs" placeholder="ელ. ფოსტა" required>
         </div>
 
 
       </div>
       <div class="forsubmit"><input type="submit" value="დამატება"  class="infsubmit"></div>
+    </form>
+    </form>
    </main>
 
     <!-- Footer -->
