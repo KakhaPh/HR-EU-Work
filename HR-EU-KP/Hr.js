@@ -181,3 +181,9 @@ function myFunction9() {
     const toggleMenu = document.querySelector('.menu');
     toggleMenu.classList.toggle('active')
   }
+// Settings Dropdown
+
+  function menuToggle1(){
+  const toggleMenu = document.querySelector('.menu2');
+  toggleMenu.classList.toggle('active')
+  }
